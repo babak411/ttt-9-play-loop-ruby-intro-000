@@ -40,6 +40,9 @@ def play(board)
   puts "Please enter 1-9:"
   user_input=gets.chomp
   index=input_to_index(user_input)
+  until counter == 20
+    counter += 1
+  end
   if valid_move?(board,index)
     return move(board, index) && display_board(board)
   else puts "Please enter 1-9:"
