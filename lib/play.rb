@@ -44,5 +44,9 @@ def play(board)
     return move(board, index) && display_board(board)
   else puts "Please enter 1-9:"
     return turn(board)
+    counter = 0
+until counter == 20
+  counter += 1
+end
 end
 end
