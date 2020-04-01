@@ -37,7 +37,6 @@ end
 
 # Define your play method below
 def play(board)
-  counter == 0
   user_input=gets.chomp
   index=input_to_index(user_input)
   if valid_move?(board,index)
